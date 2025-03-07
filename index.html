@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer-Stopper</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #2e2c3a;
+        margin: 0;
+      }
+      .container {
+        background-color: #1c1a26;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      #counDown {
+        font-size: 50px;
+        color: #ff4e9b;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      button {
+        background-color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      #reciveValue {
+        font-size: 18px;
+        font-family: sans-serif;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="counDown">0</p>
+      <div class="buttons">
+        <button class="startBtn">Start</button>
+        <button class="stopBtn">Stop</button>
+        <button class="resetBtn">Reset</button>
+        <button class="getTimeBtn">getTime</button>
+        <button class="clearBtn">clearTime</button>
+      </div>
+      <div id="reciveValue"></div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
